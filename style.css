@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+body {
+    font-family: Roboto;
+    color:#dedede;
+    background-color: #161616;
+    --bgc:#222;
+}
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter:drop-shadow(0 0 15px #000);
+}
+.main {
+  width: 512px;
+  background-color: var(--bgc);
+  margin:10px 0 0 0;
+  border-radius: 5px;
+}
+.title {
+    font-size:50px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -2px;
+    font-family: oswald;
+    line-height:0.5;
+    margin:20px 0 0 0;
+    filter:drop-shadow(0 0 15px #000);
+    user-select: none;
+}
+.of {
+    font-weight:600;
+    text-transform: lowercase;
+    line-height: 0;
+    transform: translate(108px, 25px);
+    font-size:24px;
+    filter:drop-shadow(0 0 15px #000);
+    user-select: none;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.bigtitle {
+    font-size:64px;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    filter:drop-shadow(0 0 15px #000);
+    user-select: none;
+    font-family: rubik;
+}
+.banner {
+    background-color: #ffffff50;
+    width:486px;
+    height:4px;
+    margin:10px 0 0 0;
+    background-image: url('img/carna.png');
+    background-position: center;
+    background-size: cover;
+    user-select: none;
+    border-radius: 5px;
+}
+.links {
+    display:flex;
+    justify-content: space-between;
+}
+.links a {
+    padding:5px 10px;
+    margin:5px;
+    color:#dedede;
+    font-family: rubik;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition:0.2s;
+    border:solid 2px #00000000;
+}
+.links a:hover {
+    background-color: #ffffff05;
+    border:solid 2px #ffffff05;
+}
+.content {
+    text-align:justify;
+    padding:10px;
+    font-family: rubik;
+}
+iframe {
+    width:100%;
+    height:600px;
+    border-radius: 5px;
+}
+.gallery {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gallery img {
+    padding:5px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width:100%;
+}
